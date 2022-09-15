@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FC Barcelona || More Then A Club</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header or title part -->
+    <header>
+      <div class="bg-black pt-5">
+        <div
+          class="d-flex flex-lg-row flex-column flex-sm-column flex-md-column align-items-center"
+        >
+          <div class="col-lg-4 col-sm-10">
+            <img class="img-fluid" src="images/messi-bg.png" alt="" />
+          </div>
+          <div class="text-white col-lg-6 col-sm-10">
+            <h1 class="display-2 text-center main-title text-warning">
+              FC Barcelona || More Then A Club
+            </h1>
+            <p class="p-title">
+              Select Your Best Five, It is a website where you can select your
+              favorite FC Barcelona football player (Present/Past). You can
+              calculate total five player, manager, coach budget and generate
+              total expences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-secondary pb-5">
+      <!-- seleced chart and player card  -->
+      <section
+        class="container d-flex flex-lg-row flex-column flex-sm-column flex-md-column pt-5"
+      >
+        <!-- first row card -->
+        <div class="col-lg-8 col-sm-10 text-center pb-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/MESSI.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="messi" class="card-title">Lionel Messi</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    id="select-messi"
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/neymar.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="neymar" class="card-title">Neymar Jr.</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/ansuFati.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="ronaldo" class="card-title">Ansu Fati</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/danialves.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="danialves" class="card-title">Dani Alves</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/pedri.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="demaria" class="card-title">Pedri</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/iniesta.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="iniesta" class="card-title">Andres Iniesta</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/xavi.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="xavi" class="card-title">Xavi</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/lewandowski.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="lewandowski" class="card-title">
+                    Robart Lewandowski
+                  </h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/ronaldinho.jpg"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 id="ronaldinho" class="card-title">Ronaldinho</h5>
+                  <p class="card-text">Goal 400 || 120 Assist</p>
+                  <button
+                    class="btn btn-warning fs-5 w-75"
+                    onclick="selectBestFive(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- selected five and budget  -->
+        <div class="col-lg-4 col-sm-10 ms-3">
+          <!-- selected Five -->
+          <div class="bg-dark rounded-2 text-white">
+            <h1 class="text-warning text-center fs-3 pt-4">
+              Selected <span id="total-selected">0</span>
+            </h1>
+            <div>
+              <ol id="selected-player-list" class="ps-5 pb-5 fs-5">
+                <!-- <li >Please Select</li> -->
+              </ol>
+            </div>
+          </div>
+          <!-- budget -->
+          <div class="bg-dark text-white rounded-2">
+            <h1 class="text-warning text-center fs-3 pt-4">Budget</h1>
+            <div class="p-4">
+              <span class="fs-5">Per Player</span>
+              <input
+                id="player-field"
+                class="ms-3 w-50"
+                type="text"
+                placeholder="Cost for per Player"
+              />
+
+              <div class="text-center">
+                <button
+                  id="player-calculate-btn"
+                  class="btn btn-primary text-center mt-3 w-75 mb-4"
+                >
+                  Calculate
+                </button>
+              </div>
+
+              <p class="fs-5">
+                Player Expences $<span
+                  id="player-expence"
+                  class="ps-3 text-warning"
+                  >0000</span
+                >
+              </p>
+              <span class="fs-5 block">Manager</span>
+              <input
+                id="manager-field"
+                class="ms-4 mb-2 w-50"
+                type="text"
+                placeholder="Cost for  Manager"
+              />
+              <br />
+              <span class="fs-5 block">Coach</span>
+              <input
+                id="coach-field"
+                class="ms-5 w-50"
+                type="text"
+                placeholder="Cost for Coach"
+              />
+              <div class="text-center">
+                <button
+                  id="total-calculate"
+                  class="btn btn-primary text-center mt-3 w-75 mb-4"
+                >
+                  Calculate Total
+                </button>
+              </div>
+              <p class="fs-5 text-center mb-5">
+                Total $
+                <span id="total-expences" class="fs-5 text-warning ms-5"
+                  >0000</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark">
+      <hr class="m-0 text-white" />
+      <p class="text-center text-white pt-5 pb-5 m-0">
+        Copyright @ 2022 All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/utilites.js"></script>
+    <script src="js/selectedFive.js"></script>
+    <script src="js/budget.js"></script>
+  </body>
+</html>
